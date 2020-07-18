@@ -1,0 +1,15 @@
+---
+- name: "[WPWPWPWPWP] - mysql"
+  hosts: mysql
+  roles:
+    - mysql
+   
+- name: "[WPWPWPWPWP] - wordpress"
+  hosts: apache
+  roles:
+    - wordpress
+
+- name: "[WPWPWPWPWP] - haproxy"
+  hosts: haproxy
+  roles:
+    - haproxy
